@@ -10,7 +10,7 @@ window.onload = function(){
 			clearInterval(interval);
 		}
 
-	},250);
+	},200);
 }
 
 var mouseCursor = document.querySelector('.cursor');
