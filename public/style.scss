@@ -1,0 +1,32 @@
+@mixin calign() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+	font-family: 'IBM Plex Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+	background-color: black;
+}
+body{
+	background-color: rgb(7, 7, 7);
+	overflow: auto;
+}
+
+@import "landing";
+@import "services";
+.cursor{
+	height: 4rem;
+	width:4rem;
+	border: 2px solid rgb(255, 255, 255);
+	background: transparent;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 0;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	transition: 0.1s ease;
+}
+
+

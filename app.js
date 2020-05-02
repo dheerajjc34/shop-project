@@ -6,25 +6,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-
-app.get("/", function(req, res) {
+app.get("/",function(req,res){
     res.render("home");
 });
 
-app.get("/service", function(req, res) {
-    res.render("service");
-});
 
-
-app.get("/about", function(req, res) {
-    res.render("about");
-});
-
-app.get("/contact", function(req, res) {
-    res.render("contact");
-});
-
-app.listen(3000, function() {
-    console.log("port is starting at 3000");
+app.listen(5500, function() {
+    console.log("port is starting at 5500");
     console.log("server started")
 })
+

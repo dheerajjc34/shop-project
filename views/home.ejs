@@ -1,50 +1,84 @@
 <%- include("partials/header.ejs") %>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="navbar-brand" href="#">SHOP</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="/service">Services<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
-                </li>
-
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="/contact">Contact<span class="sr-only">(current)</span></a>
-                </li>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div>
-        <div class=" jumbotron ">
-            <div class="container" id="test1">
-
-                <h1 class="display-2"></h1>
-
-                <h2 class="display-4 ">SLV Ceramis</h1>
-
-                    <hr class="my-4 "> </hr>
-
-
-                    <p class="lead ">
-                        <a class="btn btn-danger btn-lg " href="service" role="button ">Learn more</a>
-                    </p>
+        
+    <div class="cursor"></div>  
+    <script src="homeanim.js"></script>
+    <section>
+        <div class="landing">
+            <div class="title">
+                <span class="letter">H</span>
+                <span class="letter">e</span>
+                <span class="letter">l</span>
+                <span class="letter">l</span>
+                <span class="letter">o</span>
             </div>
+            <div class="cortinas"></div>
         </div>
-    </div>
+    </section> 
+    <h3>what we do</h3>
+    
+        <main class="service">
+            <section class="feat" data-aos="fade-right">
+                <img src="../resources/DSC_0369.JPG" alt="">
+                <div>
+                    <h3>Kitchen Solutions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nihil molestiae similique quidem laboriosam odio a dicta facere voluptates numquam itaque dolor consequatur facilis? Quod repudiandae quo ullam magnam quidem.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
 
+            <section class="feat"data-aos="fade-left">
+                <img src="../resources/tiles.jpg" alt="">
+                <div>
+                    <h3>Floor Designing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nihil molestiae similique quidem laboriosam odio a dicta facere voluptates numquam itaque dolor consequatur facilis? Quod repudiandae quo ullam magnam quidem.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+
+            <section class="feat"data-aos="fade-up-right">
+                <img src="../resources/plan.JPG" alt="">
+                <div>
+                    <h3>Interior planning</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nihil molestiae similique quidem laboriosam odio a dicta facere voluptates numquam itaque dolor consequatur facilis? Quod repudiandae quo ullam magnam quidem.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+
+            <section class="feat"data-aos="fade-up-left">
+                <img src="../resources/appliances.JPG" alt="">
+                <div>
+                    <h3>Allied Accessories</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nihil molestiae similique quidem laboriosam odio a dicta facere voluptates numquam itaque dolor consequatur facilis? Quod repudiandae quo ullam magnam quidem.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+
+            <section class="feat"data-aos="fade">
+                <img src="../resources/accessories.JPG" alt="">
+                <div>
+                    <h3>SanitaryWare</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, nihil molestiae similique quidem laboriosam odio a dicta facere voluptates numquam itaque dolor consequatur facilis? Quod repudiandae quo ullam magnam quidem.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+        </main>
+        <main class="find">
+            <h3>Find Us...</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9819619332397!2d77.68757931553833!3d12.908880790897156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1317578d48b1%3A0x192794bf31f4447!2sKajaria%20Star%20-%20Design%20Tiles%20for%20Wall%2C%20Floor%2C%20Bathroom%2C%20%26%20Kitchen%20in%20Carmelaram%20Bengaluru!5e0!3m2!1sen!2sin!4v1587561468095!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+             AOS.init({
+	offset: 400,
+	duration:1000
+});
+
+         </script>  
+        
 
 
     <%- include("partials/footer.ejs") %>
+
+    
